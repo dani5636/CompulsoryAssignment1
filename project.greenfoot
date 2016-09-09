@@ -1,10 +1,10 @@
 #Greenfoot properties
-#Fri Sep 09 12:34:47 CEST 2016
+#Fri Sep 09 12:44:16 CEST 2016
 target1.type=ClassTarget
 project.charset=UTF-8
 mainWindow.height=1048
-readme.y=10
 editor.fx.0.width=700
+readme.y=10
 readme.x=10
 editor.swing.0.y=53
 editor.swing.0.x=501
@@ -12,22 +12,24 @@ version=2.8.0
 class.NotAPongWorld.superclass=greenfoot.World
 readme.height=58
 target1.typeParameters=
+class.BAD.image=bathroom-tile.jpg
 world.lastInstantiated=NotAPongWorld
 target1.height=50
-target1.width=110
 editor.fx.0.y=0
 mainWindow.y=-9
-mainWindow.x=-9
+target1.width=110
 editor.fx.0.x=0
-readme.width=47
+mainWindow.x=-9
 editor.swing.0.height=700
-editor.swing.0.width=701
+readme.width=47
 editor.fx.0.height=700
+editor.swing.0.width=701
 package.numDependencies=0
 target1.y=10
 target1.x=70
-package.numTargets=1
 mainWindow.width=1938
+package.numTargets=1
+class.BAD.superclass=greenfoot.Actor
 target1.name=NotAPongWorld
 target1.showInterface=false
 readme.name=@README
