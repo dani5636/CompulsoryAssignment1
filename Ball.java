@@ -8,18 +8,33 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Ball extends Actor
 {
+    public int xSpeed = -7;
+    public int ySpeed = 7;
     /**
      * Act - do whatever the Ball wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act() 
-    {   
-        
-    }    
-    
-    public Ball()
     {
-        GreenfootImage ballImage = getImage();
-        ballImage.scale(20,20);
+        setLocation(getX()+ xSpeed, getY()+ ySpeed);
+        bounceFromEdge();
+        // Add your action code here.
+    }    
+    public void bounceFromEdge() 
+    {
+    if (getY()<=100|| getY()>= getWorld().getHeight()-16)
+    {
+        ySpeed = - ySpeed;
     }
+    HumanPlatform Player1 = (HumanPlatform)getOneIntersectingObject(HumanPlatform.class);
+    if (Player1 != null)
+    {
+        xSpeed = - xSpeed;
+    }
+    AIPlatform CPU = (AIPlatform)getOneIntersectingObject(AIPlatform.class);
+    if (CPU != null)
+    {
+        xSpeed = - xSpeed;
+    }
+}
 }
