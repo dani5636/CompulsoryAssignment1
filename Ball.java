@@ -10,6 +10,7 @@ public class Ball extends Actor
 {
     public int xSpeed = -7;
     public int ySpeed = 7;
+    
     /**
      * Act - do whatever the Ball wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -22,7 +23,7 @@ public class Ball extends Actor
     }    
     public void bounceFromEdge() 
     {
-    if (getY()<=100|| getY()>= getWorld().getHeight()-16)
+    if (getY()<=50|| getY()>= getWorld().getHeight()-16)
     {
         ySpeed = - ySpeed;
     }
@@ -36,5 +37,6 @@ public class Ball extends Actor
     {
         xSpeed = - xSpeed;
     }
+    
 }
 }

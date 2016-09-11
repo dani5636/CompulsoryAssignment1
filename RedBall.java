@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Ball extends Actor
+public class RedBall extends Actor
 {
     /**
      * Act - do whatever the Ball wants to do. This method is called whenever
@@ -17,7 +17,7 @@ public class Ball extends Actor
         
     }    
     
-    public Ball()
+    public RedBall()
     {
         GreenfootImage ballImage = getImage();
         ballImage.scale(20,20);

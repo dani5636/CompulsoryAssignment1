@@ -25,6 +25,7 @@ public class PongWorldNice extends World
         addObject(new Ball(),getWidth()/2,getHeight()/2);
         addObject(new HumanPlatform(),getWidth()-50,getHeight()/2);
         addObject(new AIPlatform(),57,getHeight()/2);
+        addObject(new TopBorder(),getWidth()/2 , getHeight()/2);
     }
 }
 
